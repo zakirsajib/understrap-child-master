@@ -11606,15 +11606,15 @@ p {
   background-color: #11203C;
   border-top: 8px solid #1B3568;
   padding-bottom: 15px; }
-  #wrapper-footer .col li {
+  #wrapper-footer [class*=' col-'] li {
     list-style-type: none; }
-    #wrapper-footer .col li h5 {
+    #wrapper-footer [class*=' col-'] li h5 {
       color: #fff;
       font-weight: 400; }
-    #wrapper-footer .col li a {
+    #wrapper-footer [class*=' col-'] li a {
       font-size: 0.875rem;
       color: #fff; }
-      #wrapper-footer .col li a:hover {
+      #wrapper-footer [class*=' col-'] li a:hover {
         color: #F5A12F; }
   #wrapper-footer .site-info {
     text-align: center;

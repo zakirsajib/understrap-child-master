@@ -26,7 +26,7 @@ p{
 	background-color: $darken_variant;
 	border-top:8px solid $main_header_color;
 	padding-bottom: 15px;
-	.col li {
+	[class*=' col-'] li {
 		list-style-type: none;
 		h5{
 			color: 	$links_color;
