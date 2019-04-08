@@ -54,13 +54,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php } else {
 						the_custom_logo();
 					} ?><!-- end custom logo -->
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
+				
+				<div class="d-flex flex-column">	
+					<?php get_search_form()?>				
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"><span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- The WordPress Menu goes here -->
+					<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
@@ -72,6 +72,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="free-delivery">
+						<h4>Free next day delivery</h4>
+						<p>For all orders over £45 placed before 12:00pm</p>
+					</div>
+					<div class="woo-btn align-items-center">
+						<div class="d-flex">
+							<div class="flex-fill"><a href="#" target="_blank"><i class="pt pt-user-circle-o pt-lg"></i> My Account</a></div>
+							<div class="flex-fill"><a href="#" target="_blank"><i class="pt pt-shopping-bag pt-lg"></i> Basket</a></div>
+						</div>
+					</div>
+				</div>
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
