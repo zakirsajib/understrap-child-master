@@ -48,7 +48,9 @@ p{
 	position: absolute;
 	top:0;
 	right: 0;
-	padding: 0.2em 1em;
+	padding: 0.2em 1.5em 0.5em;
+	clip-path:polygon(56px 266px,306px 265px,307px -4px,0px 0px);
+	-webkit-clip-path:polygon(56px 266px,306px 265px,307px -4px,0px 0px);
 	h4{
 		color: $hover_color;
 		margin-bottom: 0;
@@ -58,6 +60,7 @@ p{
 		margin-bottom: 0;
 		color: $links_color;
 		font-size: 0.6875rem;
+		line-height: 1;
 	}
 }
 .woo-btn{
@@ -67,7 +70,7 @@ p{
 		a{
 			color: $links_color;
 			text-transform: capitalize;
-			margin-right: 2em;
+			margin-right: 3em;
 			&:hover{
 				color: $hover_color;
 				text-decoration: none;	

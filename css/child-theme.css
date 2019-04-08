@@ -11628,7 +11628,9 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.2em 1em; }
+  padding: 0.2em 1.5em 0.5em;
+  clip-path: polygon(56px 266px, 306px 265px, 307px -4px, 0px 0px);
+  -webkit-clip-path: polygon(56px 266px, 306px 265px, 307px -4px, 0px 0px); }
   .free-delivery h4 {
     color: #F5A12F;
     margin-bottom: 0;
@@ -11636,7 +11638,8 @@ p {
   .free-delivery p {
     margin-bottom: 0;
     color: #fff;
-    font-size: 0.6875rem; }
+    font-size: 0.6875rem;
+    line-height: 1; }
 
 .woo-btn {
   position: relative;
@@ -11644,7 +11647,7 @@ p {
   .woo-btn .flex-fill a {
     color: #fff;
     text-transform: capitalize;
-    margin-right: 2em; }
+    margin-right: 3em; }
     .woo-btn .flex-fill a:hover {
       color: #F5A12F;
       text-decoration: none; }
