@@ -57,6 +57,19 @@ p{
 			font-size: 0.875rem;
 			color: $links_color;
 		}
+		a{
+			font-size: 0.875rem;
+			color: $links_color;
+			&:hover{
+				color: $hover_color;
+				text-decoration: none;
+			}
+		}
+		p{
+			font-size: 0.875rem;
+			color: $links_color;
+			margin-bottom: 0;
+		}
 	}
 	.site-info{
 		text-align: center;

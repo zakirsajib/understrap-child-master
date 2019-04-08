@@ -11628,6 +11628,16 @@ p {
   #wrapper-footer [class*=' col-'] address {
     font-size: 0.875rem;
     color: #fff; }
+  #wrapper-footer [class*=' col-'] a {
+    font-size: 0.875rem;
+    color: #fff; }
+    #wrapper-footer [class*=' col-'] a:hover {
+      color: #F5A12F;
+      text-decoration: none; }
+  #wrapper-footer [class*=' col-'] p {
+    font-size: 0.875rem;
+    color: #fff;
+    margin-bottom: 0; }
   #wrapper-footer .site-info {
     text-align: center;
     color: #fff;

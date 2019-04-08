@@ -58,6 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<ul>
 						<li><h5>Visit Our Store</h5></li>
 						<address>24 Russell Road, Whetstone, London, N20 OTS</address>
+						<p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:02083617980"> 020 8361 7980</a></p>
 					</ul>
 				</div>	
 		</div>
