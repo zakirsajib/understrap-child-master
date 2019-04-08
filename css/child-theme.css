@@ -11612,14 +11612,14 @@ p {
       color: #fff;
       font-weight: 400; }
     #wrapper-footer .col li a {
-      font-size: 14px;
+      font-size: 0.875rem;
       color: #fff; }
       #wrapper-footer .col li a:hover {
         color: #F5A12F; }
   #wrapper-footer .site-info {
     text-align: center;
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 2em 0 0; }
 
 .social-footer {
@@ -11628,7 +11628,8 @@ p {
   .social-footer a {
     color: #fff;
     margin-right: 2em;
-    margin-left: 2em; }
+    margin-left: 2em;
+    font-size: 0.875rem; }
     .social-footer a:hover {
       color: #F5A12F;
       text-decoration: none; }
