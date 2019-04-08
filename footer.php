@@ -16,6 +16,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
+<div class="top-of-page d-block d-xl-none d-lg-none d-md-none">	
+	<div class="<?php echo esc_attr( $container ); ?>">
+		<div class="row justify-content-center">
+			<div class="text-center">
+				<div class="col-12"><a href="#page"><i class="fa fa-caret-up fa-2x" aria-hidden="true"></i></a></div>
+				<div class="col-12"><a href="#page">Top of Page</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="wrapper" id="wrapper-footer">
 	<div class="<?php echo esc_attr( $container ); ?>">
 		<div class="row">

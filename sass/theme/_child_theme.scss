@@ -22,6 +22,18 @@ p{
 
 // Footer Style
 
+.top-of-page{
+	background-color: $main_header_color;
+	.text-center a{
+		color: $links_color;
+		text-transform: uppercase;
+		&:hover{
+			color: $hover_color;
+			text-decoration: none;	
+		}
+	}
+}
+
 #wrapper-footer{
 	background-color: $darken_variant;
 	border-top:8px solid $main_header_color;

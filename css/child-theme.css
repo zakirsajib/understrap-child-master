@@ -11602,6 +11602,15 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: 'OpenSans-Regular', sans-serif; }
 
+.top-of-page {
+  background-color: #1B3568; }
+  .top-of-page .text-center a {
+    color: #fff;
+    text-transform: uppercase; }
+    .top-of-page .text-center a:hover {
+      color: #F5A12F;
+      text-decoration: none; }
+
 #wrapper-footer {
   background-color: #11203C;
   border-top: 8px solid #1B3568;
