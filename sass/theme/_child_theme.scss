@@ -1,0 +1,62 @@
+@include font-face(OpenSans-Regular, "../fonts/OpenSans-Regular-webfont", 400, normal, eot woff ttf svg);
+@include font-face(OpenSans-Bold, "../fonts/OpenSans-Bold-webfont", 700, normal, eot woff ttf svg);
+@include font-face(OpenSans-Italic, "../fonts/OpenSans-Italic-webfont", 400, italic, eot woff ttf svg);
+@include font-face(Baloo, "../fonts/Baloo-Regular-webfont", normal, normal, eot woff ttf svg);
+
+body{
+	font-family: 'OpenSans-Regular', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Baloo', sans-serif;
+}
+
+p{
+	font-family: 'OpenSans-Regular', sans-serif;
+}
+
+// Header Style
+
+
+
+
+// Footer Style
+
+#wrapper-footer{
+	background-color: $darken_variant;
+	border-top:8px solid $main_header_color;
+	padding-bottom: 15px;
+	.col li {
+		list-style-type: none;
+		h5{
+			color: 	$links_color;
+			font-weight: 400;
+		}
+		a{
+			font-size: 14px;
+			color: $links_color;
+			&:hover{
+				color: $hover_color;	
+			}
+		}
+	}
+	.site-info{
+		text-align: center;
+		color: $links_color;
+		font-size: 14px;
+		padding: 2em 0 0;
+	}
+}
+.social-footer{
+	background-color: $social_footer;
+	padding: 1em 0;
+	a{
+		color: $links_color;
+		margin-right: 2em;
+		margin-left: 2em;
+		&:hover{
+			color: $hover_color;
+			text-decoration: none;
+		}		
+	}
+}

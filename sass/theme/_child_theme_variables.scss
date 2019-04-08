@@ -1,0 +1,30 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+
+//
+// Color system
+//
+
+$primary: #7C008C;
+
+// Main header color, secondary accent colour (titles etc.)
+$main_header_color: #1B3568; 
+// Darker variant of main header, for footer area
+$darken_variant: #11203C;
+// text/links on main header colour - non-hover
+$links_color: #fff;
+// hover colour for white links on main header colour e.g. main menu
+$hover_color: #F5A12F;
+// Compliment red - main accent colour e.g. prices, add to cart button
+$main_accent_color: #DD1369;
+// Compliment blue - secondary accent colour e.g. product titles
+$sec_accent_color: #1A9FD8;
+// CTA colour e.g. menu buttons for logins etc.
+$cta_color: #079647;
+// Social footer background color
+$social_footer: #091124;
