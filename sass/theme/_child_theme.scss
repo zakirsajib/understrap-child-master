@@ -38,18 +38,24 @@ p{
 	background-color: $darken_variant;
 	border-top:8px solid $main_header_color;
 	padding-bottom: 15px;
-	[class*=' col-'] li {
-		list-style-type: none;
-		h5{
-			color: 	$links_color;
-			font-weight: 400;
+	[class*=' col-']{ 
+		li {
+			list-style-type: none;
+			h5{
+				color: 	$links_color;
+				font-weight: 400;
+			}
+			a{
+				font-size: 0.875rem;
+				color: $links_color;
+				&:hover{
+					color: $hover_color;	
+				}
+			}
 		}
-		a{
+		address{
 			font-size: 0.875rem;
 			color: $links_color;
-			&:hover{
-				color: $hover_color;	
-			}
 		}
 	}
 	.site-info{

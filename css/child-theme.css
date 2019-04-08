@@ -11625,6 +11625,9 @@ p {
       color: #fff; }
       #wrapper-footer [class*=' col-'] li a:hover {
         color: #F5A12F; }
+  #wrapper-footer [class*=' col-'] address {
+    font-size: 0.875rem;
+    color: #fff; }
   #wrapper-footer .site-info {
     text-align: center;
     color: #fff;

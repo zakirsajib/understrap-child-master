@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<li><a href="#">Option 03</a></li>
 					</ul>
 				</div>
-				<div class="col-6 col-lg-3 col-xl-3">
+				<div class="col-6 col-lg-3 col-xl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
 					<ul>
 						<li><h5>Menu 01</h5></li>
 						<li><a href="#">Option 01</a></li>
@@ -46,7 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<li><a href="#">Option 03</a></li>
 					</ul>
 				</div>
-				<div class="col-6 col-lg-3 col-xl-3">
+				<div class="col-6 col-lg-3 col-xl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
 					<ul>
 						<li><h5>Menu 01</h5></li>
 						<li><a href="#">Option 01</a></li>
@@ -57,9 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col-6 col-lg-3 col-xl-3">
 					<ul>
 						<li><h5>Visit Our Store</h5></li>
-						<li><a href="#">Test Drive</a></li>
-						<li><a href="#">Testville</a></li>
-						<li><a href="#">TE57 1NG</a></li>
+						<address>24 Russell Road, Whetstone, London, N20 OTS</address>
 					</ul>
 				</div>	
 		</div>
