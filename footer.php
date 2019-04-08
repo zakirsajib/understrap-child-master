@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-6 col-lg-3 col-xl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
 					<ul>
-						<li><h5>Menu 01</h5></li>
+						<li><h5>Menu 02</h5></li>
 						<li><a href="#">Option 01</a></li>
 						<li><a href="#">Option 02</a></li>
 						<li><a href="#">Option 03</a></li>
@@ -48,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-6 col-lg-3 col-xl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
 					<ul>
-						<li><h5>Menu 01</h5></li>
+						<li><h5>Menu 03</h5></li>
 						<li><a href="#">Option 01</a></li>
 						<li><a href="#">Option 02</a></li>
 						<li><a href="#">Option 03</a></li>
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="col-6 col-lg-3 col-xl-3">
 					<ul>
 						<li><h5>Visit Our Store</h5></li>
-						<address>24 Russell Road, Whetstone, London, N20 OTS</address>
+						<address>24 Russell Road Whetstone London N20 OTS</address>
 						<p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:02083617980"> 020 8361 7980</a></p>
 					</ul>
 				</div>	
