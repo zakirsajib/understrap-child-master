@@ -92,3 +92,14 @@ p{
 		}		
 	}
 }
+
+@media only screen and (max-width: 576px){
+	#wrapper-footer [class*=' col-'] ul{
+		padding-inline-start:0;
+	}
+}
+@media only screen and (max-width: 325px){
+	#wrapper-footer [class*=' col-'] li h5{
+		font-size: 1.2rem;
+	}
+}

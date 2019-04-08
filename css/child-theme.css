@@ -11656,6 +11656,15 @@ p {
       color: #F5A12F;
       text-decoration: none; }
 
+@media only screen and (max-width: 576px) {
+  #wrapper-footer [class*=' col-'] ul {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0; } }
+
+@media only screen and (max-width: 325px) {
+  #wrapper-footer [class*=' col-'] li h5 {
+    font-size: 1.2rem; } }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
