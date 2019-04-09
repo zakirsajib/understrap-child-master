@@ -11647,12 +11647,17 @@ p {
   .woo-btn .flex-fill a {
     color: #fff;
     text-transform: capitalize;
-    margin-right: 3em; }
+    margin-right: 1em;
+    font-size: 0.875rem; }
     .woo-btn .flex-fill a:hover {
       color: #F5A12F;
       text-decoration: none; }
-  .woo-btn .flex-fill:last-child a {
-    margin-right: 0; }
+    .woo-btn .flex-fill a.cart-contents {
+      margin-right: 0;
+      background-color: #1A9FD8;
+      border-radius: 50%;
+      padding: 5px 10px;
+      font-size: 0.75rem; }
   .woo-btn .flex-fill .pt-shopping-bag:before {
     vertical-align: text-top; }
 
@@ -11709,6 +11714,82 @@ p {
     .social-footer a:hover {
       color: #F5A12F;
       text-decoration: none; }
+
+.woocommerce div.product .product_title,
+.woocommerce ul.products li.product a,
+.woocommerce-loop-product__title {
+  color: #1A9FD8; }
+
+.woocommerce #customer_login .btn-outline-primary,
+.woocommerce #customer_login .wpcf7 input[type=submit], .wpcf7 .woocommerce #customer_login input[type=submit],
+.woocommerce .return-to-shop .btn-outline-primary,
+.woocommerce .return-to-shop .wpcf7 input[type=submit],
+.wpcf7 .woocommerce .return-to-shop input[type=submit],
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order,
+.woocommerce .coupon .btn-outline-primary,
+.woocommerce .coupon .wpcf7 input[type=submit],
+.wpcf7 .woocommerce .coupon input[type=submit],
+.woocommerce .wc-proceed-to-checkout .btn.btn-primary,
+.woocommerce .wc-proceed-to-checkout .wpcf7 input.btn-primary[type=submit],
+.wpcf7 .woocommerce .wc-proceed-to-checkout input.btn-primary[type=submit],
+.woocommerce .woocommerce-message .button,
+#woocommerce-wrapper .btn-outline-primary,
+#woocommerce-wrapper .wpcf7 input[type=submit],
+.wpcf7 #woocommerce-wrapper input[type=submit] {
+  background-color: #DD1369;
+  color: #fff;
+  border-color: #DD1369; }
+  .woocommerce #customer_login .btn-outline-primary:hover, .woocommerce #customer_login .wpcf7 input:hover[type=submit], .wpcf7 .woocommerce #customer_login input:hover[type=submit],
+  .woocommerce .return-to-shop .btn-outline-primary:hover,
+  .woocommerce .return-to-shop .wpcf7 input:hover[type=submit],
+  .wpcf7 .woocommerce .return-to-shop input:hover[type=submit],
+  .woocommerce #payment #place_order:hover,
+  .woocommerce-page #payment #place_order:hover,
+  .woocommerce .coupon .btn-outline-primary:hover,
+  .woocommerce .coupon .wpcf7 input:hover[type=submit],
+  .wpcf7 .woocommerce .coupon input:hover[type=submit],
+  .woocommerce .wc-proceed-to-checkout .btn.btn-primary:hover,
+  .woocommerce .wc-proceed-to-checkout .wpcf7 input.btn-primary:hover[type=submit],
+  .wpcf7 .woocommerce .wc-proceed-to-checkout input.btn-primary:hover[type=submit],
+  .woocommerce .woocommerce-message .button:hover,
+  #woocommerce-wrapper .btn-outline-primary:hover,
+  #woocommerce-wrapper .wpcf7 input:hover[type=submit],
+  .wpcf7 #woocommerce-wrapper input:hover[type=submit] {
+    background-color: #F5A12F;
+    color: #fff;
+    border-color: #F5A12F; }
+  .woocommerce #customer_login .btn-outline-primary:focus,
+  .woocommerce #customer_login .wpcf7 input:focus[type=submit], .wpcf7 .woocommerce #customer_login input:focus[type=submit],
+  .woocommerce .return-to-shop .btn-outline-primary:focus,
+  .woocommerce .return-to-shop .wpcf7 input:focus[type=submit],
+  .wpcf7 .woocommerce .return-to-shop input:focus[type=submit],
+  .woocommerce #payment #place_order:focus,
+  .woocommerce-page #payment #place_order:focus,
+  .woocommerce .coupon .btn-outline-primary:focus,
+  .woocommerce .coupon .wpcf7 input:focus[type=submit],
+  .wpcf7 .woocommerce .coupon input:focus[type=submit],
+  .woocommerce .wc-proceed-to-checkout .btn.btn-primary:focus,
+  .woocommerce .wc-proceed-to-checkout .wpcf7 input.btn-primary:focus[type=submit],
+  .wpcf7 .woocommerce .wc-proceed-to-checkout input.btn-primary:focus[type=submit],
+  .woocommerce .woocommerce-message .button:focus,
+  #woocommerce-wrapper .btn-outline-primary:focus,
+  #woocommerce-wrapper .wpcf7 input:focus[type=submit],
+  .wpcf7 #woocommerce-wrapper input:focus[type=submit] {
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.woocommerce ul.products li.product .price,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  color: #DD1369; }
+
+.woocommerce-checkout h3 {
+  font-size: 1.25rem; }
+
+#ship-to-different-address-checkbox {
+  margin-right: 0.5em; }
 
 @media only screen and (max-width: 576px) {
   #wrapper-footer [class*=' col-'] ul {

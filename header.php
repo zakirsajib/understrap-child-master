@@ -80,8 +80,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 					<div class="woo-btn align-items-center">
 						<div class="d-flex">
-							<div class="flex-fill"><a href="#" target="_blank"><i class="pt pt-user-circle-o pt-lg"></i> My Account</a></div>
-							<div class="flex-fill"><a href="#" target="_blank"><i class="pt pt-shopping-bag pt-lg"></i> Basket</a></div>
+							<div class="flex-fill"><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account',''); ?>"><i class="pt pt-user-circle-o pt-lg"></i> My Account</a></div>
+							<div class="flex-fill"><a href="<?php echo wc_get_cart_url(); ?>"><i class="pt pt-shopping-bag pt-lg"></i> Basket</a>
+<a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d', WC()->cart->get_cart_contents_count() )); ?> </a></div>
 						</div>
 					</div>
 				</div>

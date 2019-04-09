@@ -70,14 +70,19 @@ p{
 		a{
 			color: $links_color;
 			text-transform: capitalize;
-			margin-right: 3em;
+			margin-right: 1em;
+			font-size: 0.875rem;
 			&:hover{
 				color: $hover_color;
 				text-decoration: none;	
 			}
-		}
-		&:last-child a{
-			margin-right: 0;
+			&.cart-contents{
+				margin-right: 0;
+				background-color: $sec_accent_color;
+				border-radius: 50%;
+				padding: 5px 10px;
+				font-size: 0.75rem;
+			}
 		}
 		.pt-shopping-bag:before{
 			vertical-align: text-top;
@@ -159,6 +164,49 @@ p{
 	}
 }
 
+// Woocommerce
+
+.woocommerce div.product .product_title,
+.woocommerce ul.products li.product a,
+.woocommerce-loop-product__title{
+	color: $sec_accent_color;
+}
+.woocommerce #customer_login .btn-outline-primary,
+.woocommerce .return-to-shop .btn-outline-primary,
+.woocommerce #payment #place_order, 
+.woocommerce-page #payment #place_order,
+.woocommerce .coupon .btn-outline-primary,
+.woocommerce .wc-proceed-to-checkout .btn.btn-primary,
+.woocommerce .woocommerce-message .button,
+#woocommerce-wrapper .btn-outline-primary{
+	background-color: $main_accent_color;
+	color: $links_color;
+	border-color: $main_accent_color;
+	&:hover{
+		background-color: $hover_color;
+		color: $links_color;
+		border-color: $hover_color;
+	}
+	&:focus{
+		outline: 0;
+		box-shadow: none;
+	}
+}
+.woocommerce ul.products li.product .price,
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price{
+	color: $main_accent_color;
+}
+
+.woocommerce-checkout h3{
+	font-size: 1.25rem;
+}
+
+#ship-to-different-address-checkbox{
+	margin-right: 0.5em;
+}
+
+// Responsiveness
 @media only screen and (max-width: 576px){
 	#wrapper-footer [class*=' col-'] ul{
 		padding-inline-start:0;
