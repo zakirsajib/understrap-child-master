@@ -182,6 +182,7 @@ p{
 .woocommerce .return-to-shop .btn-outline-primary,
 .woocommerce #payment #place_order, 
 .woocommerce-page #payment #place_order,
+.woocommerce .btn-outline-primary,
 .woocommerce .coupon .btn-outline-primary,
 .woocommerce .wc-proceed-to-checkout .btn.btn-primary,
 .woocommerce .woocommerce-message .button,
@@ -211,6 +212,11 @@ p{
 
 #ship-to-different-address-checkbox{
 	margin-right: 0.5em;
+}
+
+.woocommerce .coupon input#coupon_code{
+	font-size: 0.9rem;
+	height: calc((1.5em + 0.75rem) + 5px);
 }
 
 // Responsiveness
