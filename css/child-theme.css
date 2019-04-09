@@ -11620,7 +11620,41 @@ p {
     height: calc(1.25em + .5rem + 0px); }
 
 #searchsubmit {
-  padding: .075rem .75rem; }
+  padding: .075rem .75rem;
+  color: #11203C; }
+
+.navbar.mobile {
+  padding: 0.5rem 0; }
+  .navbar.mobile form#searchform,
+  .navbar.mobile .free-delivery {
+    width: 100%; }
+  .navbar.mobile form#searchform {
+    margin-top: 1em; }
+  .navbar.mobile .free-delivery {
+    position: relative;
+    text-align: center;
+    clip-path: none;
+    -webkit-clip-path: none;
+    margin-top: 1em;
+    padding: 0.5em; }
+    .navbar.mobile .free-delivery .free-msg {
+      font-size: 1.5rem;
+      font-family: 'Baloo', sans-serif;
+      color: #fada47;
+      margin-bottom: 0;
+      vertical-align: middle; }
+    .navbar.mobile .free-delivery .del-msg {
+      font-family: 'OpenSans-Regular', sans-serif;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 0;
+      color: #fff; }
+  .navbar.mobile .woo-btn {
+    margin-top: 0; }
+
+.navbar.mobile.navbar-expand-md > .container-fluid {
+  padding-right: 1rem;
+  padding-left: 1rem; }
 
 .free-delivery {
   background-color: #DD1369;
@@ -11632,7 +11666,7 @@ p {
   clip-path: polygon(56px 266px, 306px 265px, 307px -4px, 0px 0px);
   -webkit-clip-path: polygon(56px 266px, 306px 265px, 307px -4px, 0px 0px); }
   .free-delivery h4 {
-    color: #F5A12F;
+    color: #fada47;
     margin-bottom: 0;
     line-height: 1; }
   .free-delivery p {
@@ -11647,7 +11681,7 @@ p {
   .woo-btn .flex-fill a {
     color: #fff;
     text-transform: capitalize;
-    margin-right: 1em;
+    margin-right: 1.9em;
     font-size: 0.875rem; }
     .woo-btn .flex-fill a:hover {
       color: #F5A12F;
@@ -11658,6 +11692,10 @@ p {
       border-radius: 50%;
       padding: 5px 10px;
       font-size: 0.75rem; }
+      .woo-btn .flex-fill a.cart-contents:hover {
+        color: #fff; }
+    .woo-btn .flex-fill a.basket-icon {
+      margin-right: 0.5em; }
   .woo-btn .flex-fill .pt-shopping-bag:before {
     vertical-align: text-top; }
 
@@ -11727,6 +11765,9 @@ p {
 .wpcf7 .woocommerce .return-to-shop input[type=submit],
 .woocommerce #payment #place_order,
 .woocommerce-page #payment #place_order,
+.woocommerce .btn-outline-primary,
+.woocommerce .wpcf7 input[type=submit],
+.wpcf7 .woocommerce input[type=submit],
 .woocommerce .coupon .btn-outline-primary,
 .woocommerce .coupon .wpcf7 input[type=submit],
 .wpcf7 .woocommerce .coupon input[type=submit],
@@ -11746,6 +11787,9 @@ p {
   .wpcf7 .woocommerce .return-to-shop input:hover[type=submit],
   .woocommerce #payment #place_order:hover,
   .woocommerce-page #payment #place_order:hover,
+  .woocommerce .btn-outline-primary:hover,
+  .woocommerce .wpcf7 input:hover[type=submit],
+  .wpcf7 .woocommerce input:hover[type=submit],
   .woocommerce .coupon .btn-outline-primary:hover,
   .woocommerce .coupon .wpcf7 input:hover[type=submit],
   .wpcf7 .woocommerce .coupon input:hover[type=submit],
@@ -11766,6 +11810,9 @@ p {
   .wpcf7 .woocommerce .return-to-shop input:focus[type=submit],
   .woocommerce #payment #place_order:focus,
   .woocommerce-page #payment #place_order:focus,
+  .woocommerce .btn-outline-primary:focus,
+  .woocommerce .wpcf7 input:focus[type=submit],
+  .wpcf7 .woocommerce input:focus[type=submit],
   .woocommerce .coupon .btn-outline-primary:focus,
   .woocommerce .coupon .wpcf7 input:focus[type=submit],
   .wpcf7 .woocommerce .coupon input:focus[type=submit],
@@ -11790,6 +11837,22 @@ p {
 
 #ship-to-different-address-checkbox {
   margin-right: 0.5em; }
+
+.woocommerce .coupon input#coupon_code {
+  font-size: 0.9rem;
+  height: calc((1.5em + 0.75rem) + 5px); }
+
+.woocommerce form .form-row label.inline {
+  width: 100%; }
+
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+  border: 1px solid #ccc;
+  padding: 0.5em 1em; }
+
+.woocommerce .woocommerce-LostPassword.lost_password a:hover {
+  color: #F5A12F;
+  text-decoration: none; }
 
 @media only screen and (max-width: 576px) {
   #wrapper-footer [class*=' col-'] ul {

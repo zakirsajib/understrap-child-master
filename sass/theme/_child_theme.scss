@@ -43,6 +43,48 @@ p{
 	color: $darken_variant;
 }
 
+.navbar.mobile {
+	padding: 0.5rem 0;
+	form#searchform,
+	.free-delivery{
+		width: 100%;
+	}
+	form#searchform{
+		margin-top: 1em;
+	}
+	.free-delivery{
+		position: relative;
+		text-align: center;
+		clip-path:none;	
+		-webkit-clip-path:none;
+		margin-top: 1em;
+		padding: 0.5em;
+		.free-msg{
+			font-size: 1.5rem;
+			font-family: 'Baloo', sans-serif;
+			color: $red_promo_banner_color;
+			margin-bottom: 0;
+			vertical-align: middle;
+		}
+		.del-msg{
+			font-family: 'OpenSans-Regular', sans-serif;
+			font-size: 1rem;
+			line-height: 1.5;
+			margin-bottom: 0;
+			color: $links_color;
+		}
+	}
+	.woo-btn{
+		margin-top: 0;
+	}
+}
+
+.navbar.mobile.navbar-expand-md>.container-fluid{
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+
 .free-delivery{
 	background-color: $main_accent_color;
 	text-align: right;
@@ -53,7 +95,7 @@ p{
 	clip-path:polygon(56px 266px,306px 265px,307px -4px,0px 0px);
 	-webkit-clip-path:polygon(56px 266px,306px 265px,307px -4px,0px 0px);
 	h4{
-		color: $hover_color;
+		color: $red_promo_banner_color;
 		margin-bottom: 0;
 		line-height: 1;
 	}
@@ -218,8 +260,27 @@ p{
 	font-size: 0.9rem;
 	height: calc((1.5em + 0.75rem) + 5px);
 }
+.woocommerce form .form-row label.inline{
+	width: 100%;
+}
+.woocommerce form .form-row input.input-text, 
+.woocommerce form .form-row textarea{
+	border: 1px solid #ccc;
+	padding: 0.5em 1em;
+}
+.woocommerce .woocommerce-LostPassword.lost_password a:hover{
+	color: $hover_color;
+	text-decoration: none;
+}
+
+
+
+
 
 // Responsiveness
+@media only screen and (max-width: 767px){
+
+}
 @media only screen and (max-width: 576px){
 	#wrapper-footer [class*=' col-'] ul{
 		padding-inline-start:0;

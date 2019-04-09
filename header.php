@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary d-none d-md-block">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container-fluid">
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				); ?>
 				</div>
 				<div class="d-flex flex-column">
-					<div class="free-delivery">
+					<div class="free-delivery d-md-none d-lg-block">
 						<h4>Free next day delivery</h4>
 						<p>For all orders over £45 placed before 12:00pm</p>
 					</div>
@@ -89,6 +89,60 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
+
+		</nav><!-- .site-navigation -->
+		
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary d-block d-sm-block d-md-none mobile">
+
+		<?php if ( 'container' == $container ) : ?>
+			<div class="container-fluid">
+		<?php endif; ?>
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"><span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<!-- Your site title as branding in the menu -->
+					<?php if ( ! has_custom_logo() ) { ?>
+
+						<?php if ( is_front_page() && is_home() ) : ?>
+
+							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+
+						<?php else : ?>
+
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+
+						<?php endif; ?>
+
+
+					<?php } else {
+						the_custom_logo();
+					} ?><!-- end custom logo -->
+					<div class="woo-btn align-items-center">
+						<div class="d-flex">
+							<div class="flex-fill"><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account',''); ?>"><i class="pt pt-user-circle-o pt-2x"></i></a></div>
+							<div class="flex-fill"><a class="basket-icon" href="<?php echo wc_get_cart_url(); ?>"><i class="pt pt-shopping-bag pt-2x"></i></a>
+<a class="cart-contents align-top" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( '%d', WC()->cart->get_cart_contents_count() ); ?> </a></div>
+						</div>
+					</div>
+					<?php get_search_form()?>
+				<?php if ( 'container' == $container ) : ?>
+					</div><!-- .container -->
+				<?php endif; ?>
+					<div class="free-delivery">
+						<?php if ( 'container' == $container ) : ?>
+							<div class="container-fluid">
+						<?php endif; ?>
+						<div class="text-center">
+							<span class="free-msg">Free next day delivery</span> 
+							<span class="del-msg">for all orders over £45 placed before 12:00pm</span> 
+						</div>
+						<?php if ( 'container' == $container ) : ?>
+							</div><!-- .container -->
+						<?php endif; ?>
+					</div>				
+				
+			
 
 		</nav><!-- .site-navigation -->
 

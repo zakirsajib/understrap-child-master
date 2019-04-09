@@ -40,10 +40,10 @@ function my_header_add_to_cart_fragment( $fragments ) {
  
     ob_start();
     $count = WC()->cart->cart_contents_count;
-    ?><a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+    ?><a class="cart-contents align-top" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
     //if ( $count > 0 ) {
         ?>
-        <span class="cart-contents-count"><?php echo esc_html( $count ); ?></span>
+        <span class="cart-contents-count align-top"><?php echo esc_html( $count ); ?></span>
         <?php            
     //}
         ?></a><?php
