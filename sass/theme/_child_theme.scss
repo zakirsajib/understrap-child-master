@@ -169,7 +169,8 @@ p{
 				font-size: 0.875rem;
 				color: $links_color;
 				&:hover{
-					color: $hover_color;	
+					color: $links_color;	
+					text-decoration: underline;
 				}
 			}
 		}
