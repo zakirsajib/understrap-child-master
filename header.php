@@ -56,7 +56,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} ?><!-- end custom logo -->
 				
 				<div class="d-flex flex-column">	
-					<?php get_search_form()?>				
+					<form role="search" id="searchform" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
+	<div class="input-group">
+		<label class="sr-only" for="woocommerce-product-search-field-0">Search for:</label>
+		<input type="search" id="woocommerce-product-search-field-0" class="search-field field form-control" placeholder="Search products…" value="" name="s">
+		<input type="hidden" name="post_type" value="product">
+		<span class="input-group-append">
+			<button class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+		</span>
+	</div>
+</form>
+					
+									
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"><span class="navbar-toggler-icon"></span>
 					</button>
 					<!-- The WordPress Menu goes here -->
@@ -125,7 +136,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 <a class="cart-contents align-top" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( '%d', WC()->cart->get_cart_contents_count() ); ?> </a></div>
 						</div>
 					</div>
-					<?php get_search_form()?>
+					<form role="search" id="searchform" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
+	<div class="input-group">
+		<label class="sr-only" for="woocommerce-product-search-field-0">Search for:</label>
+		<input type="search" id="woocommerce-product-search-field-0" class="search-field field form-control" placeholder="Search products…" value="" name="s">
+		<input type="hidden" name="post_type" value="product">
+		<span class="input-group-append">
+			<button class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+		</span>
+	</div>
+</form>
 				<?php if ( 'container' == $container ) : ?>
 					</div><!-- .container -->
 				<?php endif; ?>
