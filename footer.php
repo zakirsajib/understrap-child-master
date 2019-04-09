@@ -92,7 +92,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="flex-fill"><a href="#" target="_blank"><i class="pt pt-envelope pt-lg"></i> Email</a></div>
 				</div>
 			</div>
-			<div class="align-items-center d-block d-md-none">
+			<div class="align-items-center d-block d-sm-none">
 				<div class="d-flex">
 					<div class="flex-fill"><a href="#" target="_blank"><i class="pt pt-facebook pt-2x"></i></a></div>
 					<div class="flex-fill"><a href="#" target="_blank"><i class="pt pt-instagram pt-2x"></i></a></div>
