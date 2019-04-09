@@ -40,6 +40,7 @@ p{
 }
 #searchsubmit{
 	padding: .075rem .75rem;
+	color: $darken_variant;
 }
 
 .free-delivery{
@@ -70,7 +71,7 @@ p{
 		a{
 			color: $links_color;
 			text-transform: capitalize;
-			margin-right: 1em;
+			margin-right: 1.9em;
 			font-size: 0.875rem;
 			&:hover{
 				color: $hover_color;
@@ -82,6 +83,12 @@ p{
 				border-radius: 50%;
 				padding: 5px 10px;
 				font-size: 0.75rem;
+				&:hover{
+					color: $links_color;
+				}
+			}
+			&.basket-icon{
+				margin-right: 0.5em;
 			}
 		}
 		.pt-shopping-bag:before{
