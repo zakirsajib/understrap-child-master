@@ -11881,12 +11881,14 @@ p {
   border-bottom-left-radius: 5px; }
 
 @media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .dropdown {
+    position: inherit; }
   .navbar-expand-md .navbar-nav .dropdown-menu {
     background-color: #e7ebf4;
     width: 100%;
-    position: fixed;
-    top: auto;
+    top: 110px;
     left: 0;
+    right: 0;
     margin: 0 auto;
     text-align: center;
     border-radius: 0;
