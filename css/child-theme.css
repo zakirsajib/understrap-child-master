@@ -11880,6 +11880,28 @@ p {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px; }
 
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .dropdown-menu {
+    background-color: #e7ebf4;
+    width: 100%;
+    position: fixed;
+    top: auto;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0;
+    border: 0;
+    color: #1B3568; }
+    .navbar-expand-md .navbar-nav .dropdown-menu li {
+      display: inline-block; }
+      .navbar-expand-md .navbar-nav .dropdown-menu li .dropdown-item {
+        color: #1B3568;
+        font-size: 0.75rem;
+        text-transform: capitalize; }
+        .navbar-expand-md .navbar-nav .dropdown-menu li .dropdown-item:hover {
+          background-color: transparent;
+          color: #F5A12F; } }
+
 @media only screen and (max-width: 576px) {
   #wrapper-footer [class*=' col-'] ul {
     -webkit-padding-start: 0;
