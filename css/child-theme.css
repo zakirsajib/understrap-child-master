@@ -11880,6 +11880,29 @@ p {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px; }
 
+.mm-menu {
+  --mm-color-background: #1B3568;
+  --mm-color-text: #fff; }
+  .mm-menu .mm-navbars_bottom {
+    bottom: 1em; }
+    .mm-menu .mm-navbars_bottom a {
+      color: #fff; }
+      .mm-menu .mm-navbars_bottom a:link {
+        color: #fff; }
+  .mm-menu a {
+    color: #fff; }
+    .mm-menu a:link {
+      color: #fff; }
+  .mm-menu .mm-listitem:after,
+  .mm-menu .mm-btn:after,
+  .mm-menu .mm-btn:before {
+    border-color: #fff; }
+  .mm-menu .mm-navbars_top > .mm-navbar > :not(img):not(.mm-btn) {
+    color: #fff; }
+  .mm-menu .mm-listitem_selected > .mm-listitem__text {
+    background: transparent;
+    color: #F5A12F; }
+
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .dropdown {
     position: inherit; }

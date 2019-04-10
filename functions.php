@@ -19,9 +19,20 @@ function theme_enqueue_styles() {
 
 	// Get the theme data
 	$the_theme = wp_get_theme();
+    
+    // mmenu
+    wp_enqueue_style( 'mmenu', get_stylesheet_directory_uri() . '/css/jquery.mmenu.all.css', array(), $the_theme->get( 'Version' ) );
+    
+    
     wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get( 'Version' ) );
+    
     wp_enqueue_script( 'jquery');
     wp_enqueue_script( 'fortawesome', 'https://use.fortawesome.com/6e7e3a67.js', array(),  $the_theme->get( 'Version' ), false);
+    
+    wp_enqueue_script( 'mmenu', get_stylesheet_directory_uri() . '/js/jquery.mmenu.all.js', array(), $the_theme->get( 'Version' ), false );
+    
+    wp_enqueue_script( 'mmenu-custom', get_stylesheet_directory_uri() . '/js/mmenu.js', array(), $the_theme->get( 'Version' ), false );
+    
     wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );

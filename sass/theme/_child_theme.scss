@@ -310,6 +310,39 @@ p{
     border-bottom-left-radius: 5px;
 }
 
+// mmenu
+
+.mm-menu{
+	--mm-color-background: #1B3568;
+	--mm-color-text: #fff;
+	.mm-navbars_bottom{
+		bottom: 1em;
+		a{
+			color: $links_color;
+			&:link{
+				color: $links_color;
+			}
+		}
+	}
+	a{
+		color: $links_color;
+		&:link{
+			color: $links_color;
+		}
+	}
+	.mm-listitem:after,
+	.mm-btn:after, 
+	.mm-btn:before{
+		border-color: $links_color;
+	}
+	.mm-navbars_top>.mm-navbar>:not(img):not(.mm-btn){
+		color: $links_color;
+	}
+	.mm-listitem_selected>.mm-listitem__text{
+		background: transparent;
+		color: $hover_color;
+	}
+}
 
 
 
