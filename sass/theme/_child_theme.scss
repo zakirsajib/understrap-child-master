@@ -3,16 +3,21 @@
 @include font-face(OpenSans-Italic, "../fonts/OpenSans-Italic-webfont", 400, italic, eot woff ttf svg);
 @include font-face(Baloo, "../fonts/Baloo-Regular-webfont", normal, normal, eot woff ttf svg);
 
+$baloo: 'Baloo', sans-serif;
+$ops-400: 'OpenSans-Regular', sans-serif;
+$ops-700: 'OpenSans-Bold', sans-serif;
+$ops-italic: 'OpenSans-Italic', sans-serif;
+
 body{
-	font-family: 'OpenSans-Regular', sans-serif;
+	font-family: $ops-400;
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Baloo', sans-serif;
+	font-family: $baloo;
 }
 
 p{
-	font-family: 'OpenSans-Regular', sans-serif;
+	font-family: $ops-400;
 }
 .btn.btn-primary{
 	background-color: $sec_accent_color;
@@ -72,13 +77,13 @@ p{
 		line-height: 1.25rem;
 		.free-msg{
 			font-size: 1.25rem;
-			font-family: 'Baloo', sans-serif;
+			font-family: $baloo;
 			color: $red_promo_banner_color;
 			margin-bottom: 0;
 			vertical-align: middle;
 		}
 		.del-msg{
-			font-family: 'OpenSans-Regular', sans-serif;
+			font-family: $ops-400;
 			font-size: 0.85rem;
 			line-height: 1.5;
 			margin-bottom: 0;
@@ -131,24 +136,6 @@ p{
 				color: $hover_color;
 				text-decoration: none;	
 			}
-/*
-			&.cart-contents{
-				margin-right: 0;
-				background-color: $sec_accent_color;
-				border-radius: 50%;
-				font-size: 0.55rem;
-				font-weight: 700;
-				position: absolute;
-				top:0;
-				right: -30px;
-				width: 20px;
-				line-height: 20px;
-				text-align: center;
-				&:hover{
-					color: $links_color;
-				}
-			}
-*/
 			&.basket-icon{
 				margin-right: -.25em;
 			}
@@ -325,13 +312,18 @@ p{
 
 
 
-// Responsiveness
-@media only screen and (max-width: 767px){
 
-}
+// Responsiveness
 @media only screen and (max-width: 576px){
 	#wrapper-footer [class*=' col-'] ul{
 		padding-inline-start:0;
+	}
+	// Search Results
+	.woocommerce-products-header__title.page-title{
+		font-size: calc(2.5rem - 30%);	
+	}
+	.navbar.mobile .free-delivery .del-msg{
+		display: none;
 	}
 }
 @media only screen and (max-width: 325px){

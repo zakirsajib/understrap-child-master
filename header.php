@@ -136,6 +136,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <a class="cart-contents align-top" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( '%d', WC()->cart->get_cart_contents_count() ); ?> </a></div>
 						</div>
 					</div>
+					<?php if(!(is_cart()||is_checkout())):?>
 					<form role="search" id="searchform" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
 	<div class="input-group">
 		<label class="sr-only" for="woocommerce-product-search-field-0">Search for:</label>
@@ -146,6 +147,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</span>
 	</div>
 </form>
+					<?php endif;?>
 				<?php if ( 'container' == $container ) : ?>
 					</div><!-- .container -->
 				<?php endif; ?>

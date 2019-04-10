@@ -11594,13 +11594,13 @@ figure.woocommerce-product-gallery__wrapper {
   src: url("../fonts/Baloo-Regular-webfont.eot?") format("eot"), url("../fonts/Baloo-Regular-webfont.woff") format("woff"), url("../fonts/Baloo-Regular-webfont.ttf") format("truetype"), url("../fonts/Baloo-Regular-webfont.svg#Baloo") format("svg"); }
 
 body {
-  font-family: 'OpenSans-Regular', sans-serif; }
+  font-family: "OpenSans-Regular", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Baloo', sans-serif; }
+  font-family: "Baloo", sans-serif; }
 
 p {
-  font-family: 'OpenSans-Regular', sans-serif; }
+  font-family: "OpenSans-Regular", sans-serif; }
 
 .btn.btn-primary, .wpcf7 input.btn-primary[type=submit] {
   background-color: #1A9FD8;
@@ -11646,12 +11646,12 @@ p {
     line-height: 1.25rem; }
     .navbar.mobile .free-delivery .free-msg {
       font-size: 1.25rem;
-      font-family: 'Baloo', sans-serif;
+      font-family: "Baloo", sans-serif;
       color: #fada47;
       margin-bottom: 0;
       vertical-align: middle; }
     .navbar.mobile .free-delivery .del-msg {
-      font-family: 'OpenSans-Regular', sans-serif;
+      font-family: "OpenSans-Regular", sans-serif;
       font-size: 0.85rem;
       line-height: 1.5;
       margin-bottom: 0;
@@ -11689,25 +11689,7 @@ p {
     color: #fff;
     text-transform: capitalize;
     margin-right: 1.9em;
-    font-size: 0.875rem;
-    /*
-			&.cart-contents{
-				margin-right: 0;
-				background-color: $sec_accent_color;
-				border-radius: 50%;
-				font-size: 0.55rem;
-				font-weight: 700;
-				position: absolute;
-				top:0;
-				right: -30px;
-				width: 20px;
-				line-height: 20px;
-				text-align: center;
-				&:hover{
-					color: $links_color;
-				}
-			}
-*/ }
+    font-size: 0.875rem; }
     .woo-btn .flex-fill a:hover {
       color: #F5A12F;
       text-decoration: none; }
@@ -11901,7 +11883,11 @@ p {
 @media only screen and (max-width: 576px) {
   #wrapper-footer [class*=' col-'] ul {
     -webkit-padding-start: 0;
-            padding-inline-start: 0; } }
+            padding-inline-start: 0; }
+  .woocommerce-products-header__title.page-title {
+    font-size: calc(2.5rem - 30%); }
+  .navbar.mobile .free-delivery .del-msg {
+    display: none; } }
 
 @media only screen and (max-width: 325px) {
   #wrapper-footer [class*=' col-'] li h5 {
