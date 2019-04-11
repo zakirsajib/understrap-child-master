@@ -20,8 +20,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>">
 		<div class="row justify-content-center">
 			<div class="text-center">
-				<div class="col-12"><a href="#page"><i class="fa fa-caret-up fa-2x" aria-hidden="true"></i></a></div>
-				<div class="col-12"><a href="#page">Top of Page</a></div>
+				<div class="col-12"><a class="back-top" href="#page"><i class="fa fa-caret-up fa-2x" aria-hidden="true"></i></a></div>
+				<div class="col-12"><a class="back-top" href="#page">Top of Page</a></div>
 			</div>
 		</div>
 	</div>

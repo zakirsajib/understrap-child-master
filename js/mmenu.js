@@ -59,4 +59,16 @@ $ = jQuery.noConflict();
 			e.stopImmediatePropagation();
 			api.open();
 		});
+	
+	
+	// Back to Top
+	$('.back-top').click(function(){
+		$('html, body').animate({
+			scrollTop:0
+		}, 800);
+		return false;
+	})
+	
+	
+	$('.woo-btn').addClass('initialised');
 });

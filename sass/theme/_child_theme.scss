@@ -50,6 +50,7 @@ p{
 
 .navbar.mobile {
 	padding: 0.5rem 0 0;
+	.navbar-brand{font-size: 1rem;}
 	.navbar-toggler{
 		border-color: transparent;
 		padding: .25rem 0;
@@ -126,6 +127,15 @@ p{
 .woo-btn{
 	position: relative;
 	top: 40px;
+	opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+	&.initialised{
+		visibility: visible;
+		opacity: 1;
+	}
+	
 	.flex-fill{
 		a{
 			color: $links_color;
@@ -313,7 +323,7 @@ p{
 // mmenu
 
 .mm-menu{
-	--mm-color-background: #1B3568;
+	--mm-color-background: #091124;
 	--mm-color-text: #fff;
 	.mm-navbars_bottom{
 		bottom: 1em;
@@ -344,9 +354,38 @@ p{
 	}
 }
 
-
-
 // Responsiveness
+
+/*
+@media (min-width: 992px){
+	.d-md-block {
+	    display: block!important;
+	}
+	.d-lg-block {
+    	display: none!important;
+	}
+	.d-lg-none {
+    	display: none!important;
+	}
+}
+
+@media (min-width: 1160px){
+	.d-lg-none {
+	    display: none!important;
+	}
+	.d-lg-block {
+    	display: block!important;
+	}
+	.navbar-expand-md .navbar-toggler {
+    	display: none!important;
+	}
+}
+*/
+@media (min-width: 768px) and (max-width: 1170px){
+	.free-delivery{display: none;}
+	.woo-btn.initialised{display: none}
+}
+
 @media (min-width: 768px){
 	.navbar-expand-md .navbar-nav{
 		.dropdown{
@@ -393,5 +432,8 @@ p{
 @media only screen and (max-width: 325px){
 	#wrapper-footer [class*=' col-'] li h5{
 		font-size: 1.2rem;
+	}
+	.woo-btn .flex-fill a{
+		margin-right: 1.3em;
 	}
 }

@@ -85,7 +85,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				); ?>
 				</div>
 				<div class="d-flex flex-column">
-					<div class="free-delivery d-md-none d-lg-block">
+					<div class="free-delivery">
 						<h4>Free next day delivery</h4>
 						<p>For all orders over £45 placed before 12:00pm</p>
 					</div>
