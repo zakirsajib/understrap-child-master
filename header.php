@@ -56,6 +56,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 					} ?><!-- end custom logo -->
 				
 				<div class="d-flex flex-column">	
+					<div class="tablet free-delivery">
+						<span class="free-msg">Free next day delivery</span> 
+						<span class="del-msg">for all orders over £45 placed before 12:00pm</span>
+					</div>
+					<div class="tablet woo-btn align-items-center">
+						<div class="d-flex">
+							<div class="tablet my-account"><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account',''); ?>"><i class="pt pt-user-circle-o pt-lg"></i> My Account</a></div>
+							<div class="tablet basket"><a class="basket-icon" href="<?php echo wc_get_cart_url(); ?>"><i class="pt pt-shopping-bag pt-lg"></i> Basket</a>
+<a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( '%d', WC()->cart->get_cart_contents_count() ); ?> </a></div>
+						</div>
+					</div>
+					
+					
 					<form role="search" id="searchform" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
 	<div class="input-group">
 		<label class="sr-only" for="woocommerce-product-search-field-0">Search for:</label>
@@ -83,7 +96,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+				
+				
+				
 				</div>
+				
+				
 				<div class="d-flex flex-column">
 					<div class="free-delivery">
 						<h4>Free next day delivery</h4>

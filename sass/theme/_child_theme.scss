@@ -110,8 +110,8 @@ p{
 	top:0;
 	right: 0;
 	padding: 0.2em 1.5em 0.5em;
-	clip-path:polygon(56px 266px,306px 265px,307px -4px,0px 0px);
-	-webkit-clip-path:polygon(56px 266px,306px 265px,307px -4px,0px 0px);
+	clip-path:polygon(5% 100%, 100% 100%, 100% -4px,0 0);
+	-webkit-clip-path:polygon(5% 100%, 100% 100%, 100% -4px,0 0);
 	h4{
 		color: $red_promo_banner_color;
 		margin-bottom: 0;
@@ -136,6 +136,8 @@ p{
 		opacity: 1;
 	}
 	
+	.tablet.my-account,
+	.tablet.basket,
 	.flex-fill{
 		a{
 			color: $links_color;
@@ -353,37 +355,51 @@ p{
 		color: $hover_color;
 	}
 }
+.tablet.woo-btn.initialised,
+.tablet.free-delivery{
+	display: none;
+}
+
 
 // Responsiveness
 
-/*
-@media (min-width: 992px){
-	.d-md-block {
-	    display: block!important;
-	}
-	.d-lg-block {
-    	display: none!important;
-	}
-	.d-lg-none {
-    	display: none!important;
-	}
-}
-
-@media (min-width: 1160px){
-	.d-lg-none {
-	    display: none!important;
-	}
-	.d-lg-block {
-    	display: block!important;
-	}
-	.navbar-expand-md .navbar-toggler {
-    	display: none!important;
-	}
-}
-*/
 @media (min-width: 768px) and (max-width: 1170px){
+	.navbar{padding: 0 1rem;}
 	.free-delivery{display: none;}
 	.woo-btn.initialised{display: none}
+	
+	.tablet.woo-btn.initialised{
+		display: block;
+		top:13px;
+		margin: 0 auto;
+	}
+	
+	.tablet.free-delivery{
+		display: block;
+		position: relative;
+		text-align: center;
+		clip-path:polygon(5% 100%, 100% 100%, 100% -4px,0 0);	
+		-webkit-clip-path:polygon(5% 100%, 100% 100%, 100% -4px,0 0);
+		padding: 0.5em;
+		line-height: 1.25rem;
+		.free-msg{
+			font-size: 1.25rem;
+			font-family: $baloo;
+			color: $red_promo_banner_color;
+			margin-bottom: 0;
+			vertical-align: middle;
+		}
+		.del-msg{
+			font-family: $ops-400;
+			font-size: 0.85rem;
+			line-height: 1.5;
+			margin-bottom: 0;
+			color: $links_color;
+		}
+	}
+	.navbar-expand-md .navbar-nav .dropdown-menu{
+		top:217px!important;
+	}
 }
 
 @media (min-width: 768px){
